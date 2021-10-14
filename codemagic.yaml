@@ -1,0 +1,68 @@
+workflows:
+  react-native-ios:
+    name: React Native iOS
+    max_build_duration: 120
+    instance_type: mac_mini
+    environment:
+      vars:
+        APP_STORE_CONNECT_ISSUER_ID: Encrypted(Z0FBQUFBQmc1RHJoOWkyb2hXUjhNYXRQSkozclpBS1NINUNVWWhVcWtSQUZsS0hGTXZ3WFJlVTM2dzU1N3VKTldQb3RZZjdXeWVRZ19NYmpCakNVUDVlRHBPdF9ENDhwSmNqb2dRY1FGUzZQXy1iRThPYnFiZU5vb0g4ZVVwSUFpS0JVOVRCcXo2dEg=)
+        APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(Z0FBQUFBQmc1RHBUMlpZSnRtOTN0VWtWbVRVYXgtVHdDTXYwM3o4VXZQTkJodkFzMi1admw5ckczaFRGZ1R0eGh0QXNWdk5vX004cVJGcTh4WDRBRU90MVNLb2IxRVhEdGc9PQ==)
+        APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(Z0FBQUFBQmc1RHRFd3MyWkhVRDk4Q1FZcldBRFFzR2x2eEV2aW9SbktKankyazdvM1hrNjlVdlNBbE9vSkpZNTVmYTIzZHpWVzJQYTUyaC14c0dTNXc4ZkpWckhfTlh0Y2taNk95SkZ6ZzRBVElISGtrLUVGdV9SYjNBRXVyQnRXTW9jNTZLR1ZEZGx0Y0ZzZHloYnhTdjhJeUY0dC16VUR1N1lWOWxsd3F4T0Q2VUNFT2VORkYyTC1GellIZ0NxX3ZsQnpwcDJScXlpUEx3bjAta3k1MnRfZ0Zkck9uODB5WUMzTXFBaXRyczBLR3daQ1VjWUlBUXVLSUloNExtQ0hVci1UTk81QTYzOVdTbjk5YkoySjN4ZjRzMDVOR05fR2l5MzFHZTNQR2xFck5BT3ZoSzI1NEtTYjFndnlKWHV1ODNOTDBUZzJMV0twb2s2TEIwaWFsNHlOa1RlNFMtdV9kOU5HclpRNWRYa3JCWjR5WHpvLU9PY3JLOHpoZWgtRUdicEJNT1RrUzgxeTI3SnA3THFGa1lFZGtpWEFqd0drNGtXdGJHLVNuMm5malk1WUZWcTJXST0=)
+        CERTIFICATE_PRIVATE_KEY: Encrypted(Z0FBQUFBQmc1RHYyUmQ0M3AxRXVHQ2V0TmZEUmIwT3RpMDg3TWtteVFDbUg4dm5WdGwyWndnV0ZGR0pjMkZBRFlUdU5sNDRUUHM3MGpRMXRHOXdGSTlJTUs3SzhPaDZkZFZab2ZwUkRyQ1FwUmVtRlVJZGZUM2FWYlg2NmhyeUthaDZFUlNyckRTTUJNS0dfaGJIS3ZjaDRZeURBYzJ0MTJvVWh3OXQ5UU0zZW9lZTVOXzRwck5BUlJZZm9MRjgzUXFWV1FkbllnVDhtd3BpZVJuWkpqOFpYdHFzZXhnTVZtU0gxSjBzcEpsVldLR2ZZb2ZhM0JQM2JTbDZVMzFYTzBTczV5OFRaQ2t2My1GUmd2T2FlNnJ2OUMxN3hqM0Y1QzdiVFljWF9KQ1dCNnpWZGRib3dlZ0l0bmtYQWZPSktvUFdQNEtpMjhpM2h2MkNOVHpaYXo3ZFRPMUlWci1Qck5vSW4zSWxJWE9zZWpEWmpPODRHeW1mbHhxOVlmVVY3VzAxcF9rZ01DNHh0TlNYYXBzNXI4TnBpWmtMSGhnQXpZRDMyQ3c3TFVjNkdWRkNEbEozRzZuYnVsTFFBU1IyYWVOMjRqR3M0cXRhaTE3QUVabEZLSU5NNmFWamRza1hYWHYyWHV3elRWR2d6LUdaQVNfQ2o4T3B4LUhSQ3ZZQ2dNN0RwZFQxN0c5ZzhZQUF5WVh4MWN2bFJjZ3RXckMxSlJNRGpGaWRKR1dVLTYyTkV1SXgzd3kyZ2QwbURSc1lsaVYxY1lMZTRJUHB6T0N2dWNzbTViZ2RCMEdOanVlckZ1bC04NzhqQy14bkVBSVAwcEhVb05wcE5ZSmtPNXR3cU1rZERTWE9MbUw3Wjl0V3JZQzhZX0V6bkprR3NlbGd4Yy1sUTV3b0xwckYyZDU3UUtzbDdERk03Q2FjZi1qS0E3QXB6WWl6T1c4TEpPN0NsemN3eVU0UzFSbFJpSl9VRndQVEoxVl9UNnVvclE5bW9MWDc5c0NiQmozYkxMT0ExUTk4bkIzVEdNVC1tU0NLQ0ZZd29BOFNxRTdNS1BHdWdwR1ZrYlBHMkFzcUhyNmZmSFJZd29venU2SHdwN1hLYXJRM09ENUJSWV9mSkhVdWRJYmU4U2RPeTVxMWs5ZkhEVTVMMzZZYkw5c0JmbHUtRUJqVnAwem9mVG1GQU1OVFMzd3AtZmxyRE1tVC16Z1JMMjhvalJkVXY3aWJxbDJzTGJCX2pwMlRuX1lWYkhXbGVYLUZnQU5lc2gxcWRyOHVSeU5FS0J0NWIxdVJ1Y1FFVFlDdmJxdWpFQ1kxeHhWNVhOM3BSbUw4aHNiOHNtZ0lLX3lhZ05oYkxDVTN4MzREaXpfbkdONzlFbGt0NTR1aWJ0QzNna3Y5RlRYbEVnVzZPRk5ZZ0lZQUhLSnpBLVIydFU2RWI0eGRvS0kzUGc4NTJ6cWktRmt1OGVvUUdhR1BURS1zd2h0ZzhOZWRTNnJoUkZNYl9Dd3Byb25Cd2QzOTdzUWs5bkk2X2NwVHl4MEZCSDlpdGhXeFBKVy03NWZzTE1NZnEtY01tbFVma2phb2lQdy1nSXVEcV9kaUdXQlpSVUhWWDZFVjFJQTVGQVdsaE50V0NhRlctMGU5R21jb0xhQ0djTTN5YVFCNjJfOHBHS3luc2FsSGZwYUlLSHljcjUwRDlHWXlMMng3MHg0aU5GdzdEcVJJVUw3Wk9EcFEtZllFblFBcXZWZHNuQkhQZmpad1pFSlZ3dGxhOUk0NmFiSVN2SFRhZnd0OTF1bUdHWmlWTEJmZU1QNUVOS0ZBSzVmX2pmQ2xmYVdvVXJybFBIYXdpaGtVRUZwSTcyWXg4LTBneG9OanNrQXJIWG5xQ3k0aERiall5b1p0M2JDQVNJRjVtaW1VVmlEeVNZSHJvQTF2dk1RUkFkbzVsblFpdEpmNUMzZmVHc3ZwQWhFMW9hb0oyZ0t1MVFTUVdyc1Y0VWxWWWdLWlRfNUFQcmJpMldSaHdLRTA0bkRCeEZDMjFTclFwVlNQLWNzc0N4YjFKMlNCMUJOc21qOEswRElLejF3SkljcXpYM0I2eUJoRGNCUG80aVJTaElWN3QtUWQyY0tGa09QRHNZazV5VV9GQ2dnVUtwNFhXTkljWldMaFNkVU01bTB6cWM5TmRnaFZYbk00R043aVlqcWMzT1UyQjVSNG5FYm9zMlhqZWhqX0ZNdUpCYTJlZXB2b0htQmlsajRuaFlGb242SnRtc1p2UXd1XzVGVGhRemNCSEtJZF9uVzUwS3pqRzlPcFF4QVBUd0NDUC1MVDR4SUlNR2FTRDZTRDhUdXB4LWNZNWoyUWdXNGZCSGRDTHZqZTlaYjhJYVloazhrQ1RMVUJoczB0a1BXRVgtWmQyWEN5YmxRQmxfRThjdnJ6NUVuOHhseDkwWVJBV0JtMVg4dC0wSGZQYThVREdfR2NOdHp0SGNqa3pJeVotM1pELUJNSkx5MFd0dG0tWGRFQXE1M2VGakpJNmw2RGhMSjA4cHZBSVhwcFV6LUh3Nnl2OHRqaTFXV0NTamJPd2ZKV0ZjMTVkZWdNZnNxbXVZUWRzNEExcDJOMkJuQ0ZiaDNGQmpnMmR5QWthTlZTWUxRSEJzbWFvUko2dGhJeThyUERiUXJGR1lDZ3ZidVM2LXBjVVVzTmt2RVlkR1h3M1ROUjZKRy11SzU2ZWR4WFVncVg3bnozYklrRzZxM3NmeTBrZ1Rwci1xNS1zWWp2YlJFSmFLV1JxZmZzQmZaZFE2X3M0U3lQaUQzS2RuMzFPaTljcGFXaUR5MFI4aHA0NE5tVUpWTklhZmhvZ18zbFVBNVN2NGNZOFZaYlI5ZmxVY1I2dnB4WC0zWGpVUjZoYXIyNUx3OHF4YmE5TjhJcnMxN0o2QmJxV284OTVWM1c2TFpybE81SkphODNWdDBkc1hRN0d2WkdaVFlWSlA3UmFGR3JzeEtQYjQ0bDdXYXVQZW1YTTNxczBBaThnLUdvY2dnYjFKZ1YxeDN0Vy1pMzZBYW85Z2Z5Z01tNzRUSE9BRGhCS09EZ291alZvME5OS2djekEyanJm)
+        BUNDLE_ID: "net.alazzani"
+        APP_STORE_APP_ID: 1575355708
+        XCODE_PROJECT: "alazzani.xcworkspace"
+        XCODE_SCHEME: "alazzani"
+        APPLE_ID: Encrypted(Z0FBQUFBQmc1YXRBZENMc0hrT1RFTEZGemxxY0Jac1gzNHE1alJKVDU0MUZSbTlieVZ4eVRmYzRSTTdod2VCZ1lXS2Vjc0RGbTVoYlJ3U25nZU0yRUM1TGszdm1CSjJGTUJvRU02empRNzQ0VzBXTnZJTy1WUFE9)
+        APP_SPECIFIC_PASSWORD: Encrypted(Z0FBQUFBQmc1YXRQdmMydlo5NTRSbmtYOHk3SEF3eFhxVk5aSU5nZWtmdjMtWkdQd1RvNlhTeURvUWJ4MXNHRTg5MWZDSDBjVlo0OTVFam9BSnZfaGk3YW9LalBUVFNPWExwUjVhR3M2MXMzbURiUGp1WXFGaEE9)
+      node: 16.2.0
+      xcode: latest
+      cocoapods: default
+    triggering:
+      events:
+        - push
+        - tag
+        - pull_request
+      branch_patterns:
+        - pattern: develop
+          include: true
+          source: true
+    scripts:
+      - name: Install npm dependencies
+        script: |
+          yarn install
+      - name: Install CocoaPods dependencies
+        script: |
+          cd ios && pod install
+      - name: Set up keychain to be used for codesigning using Codemagic CLI 'keychain' command
+        script: |
+          keychain initialize
+      - name: Fetch signing files
+        script: |
+          app-store-connect fetch-signing-files "$BUNDLE_ID" --type IOS_APP_STORE --create
+      - name: Use system default keychain
+        script: |
+          keychain add-certificates
+      - name: Increment build number
+        script: |
+          #!/bin/sh
+          set -e
+          set -x
+          cd $FCI_BUILD_DIR/ios
+          # agvtool new-version -all $(($BUILD_NUMBER + 1))
+          agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APP_ID") + 1))
+      - name: Set up code signing settings on Xcode project
+        script: |
+          xcode-project use-profiles --warn-only
+      - name: Build ipa for distribution
+        script: |
+          xcode-project build-ipa --workspace "$FCI_BUILD_DIR/ios/$XCODE_PROJECT" --scheme "$XCODE_SCHEME"
+    artifacts:
+      - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+    publishing:
+      app_store_connect:
+        apple_id: $APPLE_ID
+        password: $APP_SPECIFIC_PASSWORD
