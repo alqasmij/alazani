@@ -1,8 +1,7 @@
 workflows:
-  react-native-ios:
-    name: React Native iOS
-    max_build_duration: 120
-    instance_type: mac_mini
+  default-workflow:
+    name: Default Workflow
+    max_build_duration: 60
     environment:
       vars:
         APP_STORE_CONNECT_ISSUER_ID: bd9a4095-a52d-400f-ac40-27da4241deea
