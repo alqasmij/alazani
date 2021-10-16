@@ -18,10 +18,6 @@ workflows:
       node: 16.2.0
       xcode: latest
       cocoapods: default
-      branch_patterns:
-        - pattern: develop
-          include: true
-          source: true
     scripts:
       - name: Install npm dependencies
         script: |
