@@ -12,8 +12,6 @@ workflows:
         APP_STORE_APP_ID: 1575355708
         XCODE_PROJECT: "alazzani.xcworkspace"
         XCODE_SCHEME: "alazzani"
-        APPLE_ID: Encrypted(Z0FBQUFBQmc1YXRBZENMc0hrT1RFTEZGemxxY0Jac1gzNHE1alJKVDU0MUZSbTlieVZ4eVRmYzRSTTdod2VCZ1lXS2Vjc0RGbTVoYlJ3U25nZU0yRUM1TGszdm1CSjJGTUJvRU02empRNzQ0VzBXTnZJTy1WUFE9)
-        APP_SPECIFIC_PASSWORD: Encrypted(Z0FBQUFBQmc1YXRQdmMydlo5NTRSbmtYOHk3SEF3eFhxVk5aSU5nZWtmdjMtWkdQd1RvNlhTeURvUWJ4MXNHRTg5MWZDSDBjVlo0OTVFam9BSnZfaGk3YW9LalBUVFNPWExwUjVhR3M2MXMzbURiUGp1WXFGaEE9)
       node: 16.2.0
       xcode: latest
       cocoapods: default
@@ -53,6 +51,11 @@ workflows:
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
       - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
     publishing:
+      email:
+        recipients:
+          - alqasmi.max@gmail.com
       app_store_connect:
-        apple_id: $APPLE_ID
-        password: $APP_SPECIFIC_PASSWORD
+        api_key: Encrypted(Z0FBQUFBQmhXYk5kYXJhLTMzVzV2d2JzdVA4YzhjZ0VVN1hsYVFqSC1mSEdPcDQxd3R6bjZMZklsUzluVmVvVzJJdVZMdUpKaFI4MWhSWTVVNjJNUDFGcVJuNDVyNmFCVUxOcmVOTFAxOTBCWWhWZDVTMXR0a0dmbnhaZVJGeDFKU281OGUzUU9jMEk2UUlPSW0wNFBONW4yNFVkSkRCMU8ydEJpUzdFWE9ZazhUWWZxZ1BEeTNlamxDM1p4ZzdMTktWZ0pJd25odks4d3lYUzlQNXF0bmhVakFORGI0bVNTM3VlTWFBUnZoN0tNTHlPRGtycE9mS04zVldKcC00aUIzZVNHMkJXVE51WXd5ZjItSFpfTXBNNGtVOG0xRnpwek1HcjZ6bjJWYTd1TEhMVlVLWk8zTlBCNEMtX21IQXVlcEJxUno3Y0cxWjZ2RzJ5X0ZFaWRzU1MyOF9xOGMxam5ILVNYNDBVTm90ZTBCb3FNUF9SNkZoQnJGSExhSlZwQUFwREZsemNiWXprME9HQTlUbF80VFprZ1RabEFRV2NON21nd1Z5cy1rNjdPSi1NUDA4N2Q4az0=)
+        key_id: 7DNXNP99C5
+        issuer_id: bd9a4095-a52d-400f-ac40-27da4241deea
+        submit_to_testflight: false
